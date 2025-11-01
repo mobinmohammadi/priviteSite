@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Dana;
+  src: url("./../public/Fonts/Dana/woff2/DanaFaNum-Medium.woff2");
+}
+
+@font-face {
+  font-family: Dana-Bold;
+  src: url("./../public/Fonts/Dana/woff2/DanaFaNum-DemiBold.woff2");
+}
+
+@font-face {
+  font-family: "Morabba";
+  src: url("./../public/Fonts/Morabba/woff2/Morabba-Light.woff2");
+}
+
+@font-face {
+  font-family: Morabba-Bold;
+  src: url("./../public/Fonts/Morabba/woff2/Morabba-Bold.woff2");
+}
+
+@theme {
+  --text-md: 15px;
+  --breakpoint-x: 400px;
+  --breakpoint-xs: 468px;
+  --breakpoint-md: 548px;
+  --breakpoint-mmd: 768px;
+  --breakpoint-s: 200px;
+  --text-x: 10px;
+  --font-Dana: Dana;
+  --font-Dana-Bold: Dana-Bold;
+  --font-Morabba: Morabba;
+  --font-Morabba-Bold: Morabba-Bold;
+}
+
+/* برای همه المان‌ها */
+.container {
+  width: 96%; /* عرض نسبی برای صفحات کوچک */
+  max-width: 1200px; /* حداکثر عرض برای صفحات بزرگ */
+  margin: 0 auto; /* وسط چین کردن */
+  box-sizing: border-box; /* شامل padding و border در عرض */
+}
+
+/* مثال برای تصاویر */
+img {
+  max-width: 100%; /* تصویر از container بزرگتر نشود */
+  height: auto; /* تناسب تصویر حفظ شود */
+}
+
+body {
+  background-color: #e2e8f0;
+  box-sizing: border-box;
+  font-family: Dana;
+}
