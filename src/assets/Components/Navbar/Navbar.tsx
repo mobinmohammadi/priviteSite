@@ -1,4 +1,3 @@
-import React from "react";
 import MenuMobile from "../../MenuMobile/MenuMobile";
 
 export default function Navbar() {
