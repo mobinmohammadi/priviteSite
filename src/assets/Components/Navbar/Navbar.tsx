@@ -10,8 +10,20 @@ export default function Navbar() {
         <a href="#">درباره ما</a>
         <a href="#">تماس با ما</a>
       </div>
-      <div className=""></div>
-      <div className=""></div>
+      <div className="bg-[#0C9C90] rounded-bl-full  rounded-tr-full pt-2 pb-2 text-white pr-8 pl-8">
+        <span className="text-sm">نیاز به مشاوره دارد؟</span>
+      </div>
+      <div className="flex gap-1 items-center justify-center">
+        <svg className="h-5 w-5">
+          <use href="#device-phone-mobile"></use>
+        </svg>
+        <span className="pt-1">090369945119</span>
+      </div>
+      <div className="">
+        <svg className="w-5 h-5">
+          <use href="#magnifying-glass"></use>
+        </svg>
+      </div>
       <div className=""></div>
     </div>
   );
