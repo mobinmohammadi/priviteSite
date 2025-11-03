@@ -1,15 +1,18 @@
+import React, { useState } from "react";
 import MenuMobile from "../../MenuMobile/MenuMobile";
 
-export default function Navbar() {
+export default function Navbar() : React.ReactElement {
+
+  const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <div className="bg-white flex items-center justify-between container p-4 fixed top-3  right-0 left-0 rounded-sm">
-      <div className="cursor-pointer">
-        <svg className="w-8 h-8 sm:hidden flex">
+    <div className="bg-white  flex items-center justify-between container p-4 fixed top-3  right-0 left-0 rounded-sm">
+      <div className="cursor-pointer ">
+        <svg  onClick={() => setOpen(!open) } className="w-8 h-8 sm:hidden flex">
           <use href="#bars-3"></use>
         </svg>
       </div>
-      <MenuMobile />
+      <MenuMobile open={open} setOpen={setOpen} />
       <div className="hidden sm:flex">
         <div className="font-Morabba-Bold text-sm pl-3">logo</div>
         <div className=" flex items-center gap-2 sm:gap-4  & > *:text-sm & > *:sm:text-base">
