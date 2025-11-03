@@ -26,7 +26,7 @@ export default function Header() {
         </div>
 
         {/* سمت راست: شیپ‌ها و عکس */}
-        <div className="relative w-80 h-80 flex items-center justify-center">
+        <div className="relative w-40 h-40 flex items-center justify-center">
           {/* عکس داخل شیپ دوم */}
           <div className="absolute rounded-full overflow-hidden ring-5  ring-amber-300 ">
             <div className="">
