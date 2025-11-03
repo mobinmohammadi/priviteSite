@@ -44,7 +44,7 @@ export default function Navbar() : React.ReactElement {
           <a href="#">تماس با ما</a>
         </div>
       </div>
-      <div className="bg-[#0C9C90] sm:rounded-bl-full  sm:rounded-tr-full pt-2 pb-2 text-white pr-4 pl-4 rounded-sm  sm:rounded-0">
+      <div className="bg-primary sm:rounded-bl-full  sm:rounded-tr-full pt-2 pb-2 text-white pr-4 pl-4 rounded-sm  sm:rounded-0">
         <span className="text-xs sm:text-sm">نیاز به مشاوره دارد؟</span>
       </div>
       <div className="hidden sm:flex gap-1 items-center justify-center">
