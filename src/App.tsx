@@ -1,4 +1,5 @@
 import "./App.css";
+import "./index.css";
 import Navbar from "./assets/Components/Navbar/Navbar";
 import Footer from "./assets/Footer/Footer";
 import FreeWork from "./assets/FreeWordk/FreeWork";
