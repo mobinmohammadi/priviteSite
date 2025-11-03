@@ -40,9 +40,23 @@
  border-bottom: 2px solid oklch(48.21% 0.07988 257.861);
  border-radius: 3px;
  font-weight: bolder;
+ 
+ transition: all 0.1s ease-in-out;
 }
 
 
+.active-post{
+  margin-top: 10px;
+  transition: all 0.5s ease;
+  opacity: 1;
+  animation-duration: 0.5s;
+}
+
+.Notactive-post{
+  margin-bottom: 40px;
+  opacity: 0;
+  
+}
 
 
 /* برای همه المان‌ها */
