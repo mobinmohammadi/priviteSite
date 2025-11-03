@@ -50,10 +50,7 @@ export default function Navbar() : React.ReactElement {
         </svg>
       </div>
     </div>
-    <div className="relative">
-
-    <div className="w-full h-full bg-black/10 absolute z-10 top-0 "></div>
-    </div>
+ 
     </>
     
   );
