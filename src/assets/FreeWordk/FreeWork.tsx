@@ -9,8 +9,7 @@ export default function FreeWork() {
   const [isShowPost, setIsShowPost] = useState<boolean>(false);
 
   useEffect(() => {
-    setIsShowPost(true)
-
+    setIsShowPost(true);
   }, [titleFilter]);
   return (
     // <div className='text-xs'>این بخش به زودی تکمیل میشود 🙄</div>
@@ -36,18 +35,20 @@ export default function FreeWork() {
             <span className="font-bold">{titleFilter}</span>
           </div>
         </div>
+        <div className="flex items-center justify-center">
           <AnimatePresence mode="wait">
-          <motion.div
-            key={activeIndex}
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 30 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="w-full"
-          >
-            <ContentFreeWork/>
-          </motion.div>
-        </AnimatePresence>
+            <motion.div
+              key={activeIndex}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 30 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="w-full"
+            >
+              <ContentFreeWork />
+            </motion.div>
+          </AnimatePresence>
+        </div>
       </div>
     </>
   );
