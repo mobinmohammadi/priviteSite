@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./assets/Components/Navbar/Navbar";
 import Footer from "./assets/Footer/Footer";
 import Header from "./assets/Header/Header";
+import HeaderTitle from "./assets/HeaderTitle/HeaderTitle";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Navbar />
 
         <Header />
+        <HeaderTitle title="نمونه کار ها"/>
         <Footer/>
       </div>
     </>
