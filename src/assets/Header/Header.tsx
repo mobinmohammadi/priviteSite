@@ -1,4 +1,5 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
 
 export default function Header() {
   return (
@@ -7,7 +8,21 @@ export default function Header() {
         {/* متن سمت چپ */}
         <div className="text-xs flex flex-col gap-2">
           <span>مبین محمدی</span>
-          <span className="min-w-40">برنامه نویس و <span className="text-rose-600">توسعه دهنده</span> وبسایت</span>
+          <div className="min-w-40">
+            <Typewriter
+              options={{
+                strings: [
+                  "برنامه نویس فرانت‌ اند",
+                  "متخصص ReactJs ",
+                  " متخصص تایپ اسکریپت ",
+                ],
+                autoStart: true,
+                loop: true,
+                delay: 100,
+                deleteSpeed: 50,
+              }}
+            />
+          </div>
         </div>
 
         {/* سمت راست: شیپ‌ها و عکس */}
