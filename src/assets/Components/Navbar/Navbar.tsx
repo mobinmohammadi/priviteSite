@@ -6,13 +6,18 @@ export default function Navbar() : React.ReactElement {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
+    <>
+    
     <div className="bg-white  flex items-center justify-between container p-4 fixed top-3  right-0 left-0 rounded-sm">
       <div className="cursor-pointer ">
         <svg  onClick={() => setOpen(!open) } className="w-8 h-8 sm:hidden flex">
           <use href="#bars-3"></use>
         </svg>
       </div>
+      <div className="fixed top-0 ring-0 z-50">
+
       <MenuMobile open={open} setOpen={setOpen} />
+      </div>
       <div className="hidden sm:flex">
         <div className="font-Morabba-Bold text-sm pl-3">logo</div>
         <div className=" flex items-center gap-2 sm:gap-4  & > *:text-sm & > *:sm:text-base">
@@ -45,5 +50,11 @@ export default function Navbar() : React.ReactElement {
         </svg>
       </div>
     </div>
+    <div className="relative">
+
+    <div className="w-full h-full bg-black/10 absolute z-10 top-0 "></div>
+    </div>
+    </>
+    
   );
 }

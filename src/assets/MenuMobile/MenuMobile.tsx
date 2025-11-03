@@ -7,7 +7,7 @@ interface MenuMobileProps {
 const MenuMobile: React.FC<MenuMobileProps> = ({ open, setOpen }) => {
   return (
     <div
-      className={`fixed top-0 z-10 w-64 right-0 h-full bg-white shadow-lg duration-300  transform transition-transform
+      className={`fixed top-0  w-64 z-20 right-0 h-full bg-white shadow-lg duration-300  transform transition-transform
         ${open ? "translate-x-0 " : "translate-x-full  "}
       `}
     >
@@ -17,7 +17,7 @@ const MenuMobile: React.FC<MenuMobileProps> = ({ open, setOpen }) => {
           <use href="#x-mark"></use>
         </svg>
       </div>
-      <div className="flex justify-between flex-col h-full pb-5">
+      <div className="flex justify-between z-50 flex-col h-full pb-5">
         <div className=" pt-5 border-b-slate-300 border-b-2 pb-5 flex items-center justify-center font-sans">
           <svg className="w-8 h-8">
             <use href="#code-svg"> </use>
