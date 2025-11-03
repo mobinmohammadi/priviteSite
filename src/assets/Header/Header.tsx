@@ -9,7 +9,7 @@ export default function Header() {
             <span>مبین محمدی</span><div>برنامه نویس و توسعه دهنده وبسایت</div>
         </div>
         <div className="">
-            <img className='w-32 h-32 rounded-full cover' src="public/Img/Mobin.jpg" alt="" />
+            <img className='w-32 h-32 rounded-full cover' src="./public/Img/Mobin.jpg" alt="" />
         </div>
       </div>
       
