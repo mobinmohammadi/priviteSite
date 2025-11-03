@@ -1,14 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import MenuMobile from "../../MenuMobile/MenuMobile";
 
 export default function Navbar() : React.ReactElement {
 
   const [open, setOpen] = useState<boolean>(false);
+  const [isFixed , setIsFixed] = useState(false)
 
+
+  useEffect(() => {
+    const handelScrool = () => {
+     if(window.screenY > 50){
+      setIsFixed(true)
+
+     }else{
+      setIsFixed(false)
+     }
+    }
+    window.addEventListener("scroll" , handelScrool)
+    return () => {
+      window.removeEventListener("scroll" , handelScrool)
+    }
+  },[]) 
+ 
   return (
     <>
     
-    <div className="bg-white  flex items-center justify-between container p-4 fixed top-3  right-0 left-0 rounded-sm">
+    <div className={`bg-white  flex mt-2.5 items-center justify-between p-4 ${isFixed ? "fixed top-3" : ""}  right-0 left-0 rounded-sm`}>
       <div className="cursor-pointer ">
         <svg  onClick={() => setOpen(!open) } className="w-8 h-8 sm:hidden flex">
           <use href="#bars-3"></use>

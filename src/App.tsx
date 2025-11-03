@@ -1,10 +1,15 @@
 import "./App.css";
 import Navbar from "./assets/Components/Navbar/Navbar";
+import Header from "./assets/Header/Header";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <div className="container flex flex-col gap-5">
+        <Navbar />
+
+        <Header />
+      </div>
     </>
   );
 }
