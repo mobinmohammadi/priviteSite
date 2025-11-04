@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ContentFreeWork from "./ContentFreeWork/ContentFreeWork";
 import { motion, AnimatePresence } from "framer-motion";
+import HeaderTitle from "../HeaderTitle/HeaderTitle";
 
 export default function FreeWork() {
   const menus = ["شخصی", "فروشگاهی", "خبری"];
@@ -14,6 +15,8 @@ export default function FreeWork() {
   return (
     // <div className='text-xs'>این بخش به زودی تکمیل میشود 🙄</div>
     <>
+      <HeaderTitle title="نمونه کار ها" />
+
       <div className="flex gap-6  flex-col  container">
         <div className="flex flex-col gap-5">
           <div className="flex justify-evenly & > *:text-xs  & > *:sm:text-sm & > *:w-24 & > *:sm:w-32 text-center & > *:cursor-pointer & > *:pt-2 & > *:pb-2   & > * >:pt-4  rounded-md text-sm bg-white">
@@ -30,9 +33,9 @@ export default function FreeWork() {
               </span>
             ))}
           </div>
-          <div className="flex gap-1 text-xs mr-3">
+          <div className="flex gap-1 text-xs md:text-sm mr-3">
             <span>فیلتر شده بر اساس پروژه های</span>
-            <span className="font-bold">{titleFilter}</span>
+            <span className="font-bold border-b-2 border-b-red-600 border-dashed pb-1">{titleFilter}</span>
           </div>
         </div>
         <div className="flex items-center justify-center">
