@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 export default function Header() {
   return (
     <>
-   <h1>این گل تقدیم به تو مخاطب خاص ❤️😘</h1> 
+   {/* <h1>این گل تقدیم به تو مخاطب خاص ❤️😘</h1>  */}
     <div className="bg-white border-r-[6px] border-primary rounded-md p-5 rounded-bl-[2rem]">
       <div className="flex justify-between sm:pt-12 sm:pb-12 sm:pl-12 w-full md:flex-row flex-col-reverse items-center h-full">
         
