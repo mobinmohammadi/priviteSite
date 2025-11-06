@@ -4,13 +4,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import HeaderTitle from "../HeaderTitle/HeaderTitle";
 
 export default function FreeWork() {
-  const menus = ["شخصی", "فروشگاهی", "خبری"];
+  const menus = ["شخصی", "فروشگاهی", "خبری" , "پنل مدیریت"];
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
   const [titleFilter, setTitleFilter] = useState<string | number>("شخصی");
   const [isShowPost, setIsShowPost] = useState<boolean>(false);
 
   useEffect(() => {
     setIsShowPost(true);
+    
   }, [titleFilter]);
   return (
     // <div className='text-xs'>این بخش به زودی تکمیل میشود 🙄</div>

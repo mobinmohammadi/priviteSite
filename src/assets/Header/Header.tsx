@@ -3,18 +3,21 @@ import Typewriter from "typewriter-effect";
 
 export default function Header() {
   return (
-    <div className="bg-white ring-zinc-700 border-r-6 border-primary text-white font-Dana rounded-md p-5 rounded-bl-4xl">
-      <div className="flex justify-between w-full md:flex-row flex-col-reverse items-center h-full">
+    <>
+   <h1>این گل تقدیم به تو مخاطب خاص ❤️😘</h1> 
+    <div className="bg-white border-r-[6px] border-primary rounded-md p-5 rounded-bl-[2rem]">
+      <div className="flex justify-between sm:pt-12 sm:pb-12 sm:pl-12 w-full md:flex-row flex-col-reverse items-center h-full">
+        
         {/* متن سمت چپ */}
-        <div className="text-xs flex flex-col gap-2 text-center md:text-right text-zinc-900" >
+        <div className="text-xs flex flex-col gap-2 mt-5 text-center md:text-right text-zinc-900">
           <span className="text-xs md:text-lg">مبین محمدی</span>
-          <div className="min-w-40 text-xs md:text-base  font-Morabba">
+          <div className="min-w-40 text-xs md:text-base font-Morabba">
             <Typewriter
               options={{
                 strings: [
-                  "برنامه نویس فرانت‌ اند",
-                  "متخصص ReactJs ",
-                  " متخصص تایپ اسکریپت ",
+                  "برنامه‌نویس فرانت‌اند",
+                  "متخصص ReactJs",
+                  "متخصص TypeScript",
                 ],
                 autoStart: true,
                 loop: true,
@@ -25,25 +28,37 @@ export default function Header() {
           </div>
         </div>
 
-        {/* سمت راست: شیپ‌ها و عکس */}
-        <div className="relative w-40 h-40 flex items-center justify-center">
-          {/* عکس داخل شیپ دوم */}
-          <div className="absolute rounded-full overflow-hidden ring-5  ring-amber-300 ">
-            <div className="">
-
-            </div>
+        {/* عکس و آیکون‌ها */}
+        <div className="relative flex items-center justify-center">
+          {/* عکس */}
+          <div className="rounded-full overflow-hidden ring-4 ring-amber-300">
             <img
               src="/Img/user.jpg"
               alt="مبین"
-              className="object-cover w-32 ring-1 ring-amber-800"
-              // style={{
-              //   clipPath:
-              //     "polygon(35% 0, 94% 11%, 97% 73%, 62% 74%, 25% 100%, 22% 54%, 2% 15%)",
-              // }}
+              className="object-cover  w-32 sm:w-52 ring-1 ring-amber-800"
             />
           </div>
+
+          {/* آیکون‌ها با فاصله از عکس */}
+          <svg className="w-12 h-12 bg-sky-600 sm:block hidden rounded-full absolute top-0 left-1/2 -translate-x-1/2 -translate-y-15">
+            <use href="#react-svg"></use>
+          </svg>
+
+          <svg className="w-12 h-12 bg-zinc-800 sm:block hidden absolute right-0 rounded-full  top-1/2 translate-x-15 -translate-y-1/2">
+            <use href="#js-svg"></use>
+          </svg>
+
+          <svg className="w-12 h-12 bg-amber-700 sm:block hidden absolute bottom-0 rounded-full  left-1/2 -translate-x-1/2 translate-y-15">
+            <use href="#css-svg"></use>
+          </svg>
+
+          <svg className="w-12 h-12 bg-green-500 sm:block hidden absolute left-0 rounded-full  top-1/2 -translate-x-15 -translate-y-1/2">
+            <use href="#typeScript-svg"></use>
+          </svg>
         </div>
       </div>
     </div>
+    </>
   );
 }
+  
